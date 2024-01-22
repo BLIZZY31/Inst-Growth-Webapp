@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inst Growth App</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="login-page">
+        <div class="login-page-container">
+            <div class="login-page-container-image-and-text-overlay-container">
+                <div class="text-container">
+                <div class="login-page-text-overlay-upper">
+                    <h1 class="text-overlay-heading">Welcome to InstGrowth.dm</h1>
+                    <p>Your primary channel for acquiring connections and opportunities.</p>
+                </div>
+                <div class="login-page-text-overlay-bottom">
+                    <h1 class="text-overlay-heading">Seamless Automation</h1>
+                    <p>Engage automatically with your prospects. Get swift responsive interactions.</p>
+                </div>
+                </div>
+            </div>
+            <div class="login-page-container-form-container">
+                <div class="login-page-container-form-container-inner">
+                <div class="form-heading-container">
+                    <h1 class="form-heading">Create your account!</h1>
+                    <p class="form-text">Already have an account?<span><a href="">Sign in</a></span></p>
+                </div>
+                <form action="">
+                    <div class="email-block">
+                        <label for="email">Email Address</label>
+                        <div class="email-overlay">
+                        <div class="email-overlay-inner"></div>
+                        <input type="email" placeholder="Enter your email here" required id="email">
+                        </div>
+                    </div>
+                    <div class="name-block">
+                    <div class="first-name">
+                        <label for="first-name">First Name*</label>
+                        <input type="text" id="firstname" name="first-name" id placeholder="First Name*" required>
+                    </div>
+                    <div class="first-name">   
+                        <label for="last-name">Last Name*</label>
+                        <input type="text" id="lastname" name="last-name" id="" placeholder="Last Name*" required>
+                    </div> 
+                    </div>
+                    <div class="password-block">
+                        <label for="password">Password</label>
+                        <div class="password-overlay">
+                        <div class="password-overlay-inner">
+                        <img src="css/Images/hide password.svg" alt="Show Password" id="toggleButton" >
+                        </div>
+                        <input type="password" placeholder="Create your password" id="password" required>
+                        </div>
+                    </div>
+                    <div class="password-strenght-container">
+                        <p class="strenght-text">Password strength</p>
+                        <div class="strenght-bar">
+                            <div class="strenght-bar-actual"></div>
+                        </div>
+                    </div>
+                    <div class="password-instructions">
+                        <p>Use a combination of uppercase and lowercase letters.</p>
+                        <p>Include numbers in your password.</p>
+                        <p>Incorporate special characters (e.g., !, @, #, $, %) for added strength.</p>
+                    </div>
+                    <div class="radio-button">
+                        <input type="checkbox" name="Agreement" id="">
+                        <p class="agreement-text">I have read and agree to the <a href="">Terms and Conditions</a></p>
+                    </div>
+                    <button class="sign-up" type="submit">Continue</button>  
+                    <div class="alternate-signups">
+                        <div class="dividers">
+                            <div class="divider"></div>
+                            <p class="divider-text">Or</p>
+                            <div class="divider"></div>
+                        </div>
+                        <div class="socials">
+                            <a href=""><img src="css/Images/Instagram icon.svg" alt=""></a>
+                            <a href=""><img src="css/Images/Google icon.svg" alt=""></a>
+                            <a href=""><img src="css/Images/Apple icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </form></div></div>
+        </div>
+    </section>
+
+
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', togglePassword);
+      
+        function togglePassword() {
+          var passwordInput = document.getElementById('password');
+      
+          // Toggle between 'password' and 'text' on each click
+          if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+          } else {
+            passwordInput.type = 'password';
+          }
+        }
+
+        function validateForm() {
+    // You can add additional validation logic here
+    var passwordInput = document.getElementById('password');
+    
+    if (passwordInput.value.trim() === '') {
+      alert('Password is required');
+      return false;
+    }
+
+    return true;
+  }
+
+  function validateForm() {
+    // You can add additional validation logic here
+    var passwordInput = document.getElementById('firstname');
+    
+    if (passwordInput.value.trim() === '') {
+      alert('Please enter your first name');
+      return false;
+    }
+
+    return true;
+  }
+  function validateForm() {
+    // You can add additional validation logic here
+    var passwordInput = document.getElementById('lastname');
+    
+    if (passwordInput.value.trim() === '') {
+      alert('Please enter your last name');
+      return false;
+    }
+
+    return true;
+  }
+  function validateForm() {
+    // You can add additional validation logic here
+    var passwordInput = document.getElementById('email');
+    
+    if (passwordInput.value.trim() === '') {
+      alert('Please enter your enter');
+      return false;
+    }
+
+    return true;
+  }
+      </script>
+</body>
+</html>
